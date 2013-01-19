@@ -16,12 +16,17 @@
     </properties>
 
     <dependencies>
-        <dependency>
+        <dependency> <!--Pulls in slf4-->
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.0.9</version>
         </dependency>
-        <dependency>
+        <dependency> <!--Spring logs to jcl-->
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+        <dependency> <!--Pulls in core spring.-->
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
