@@ -1,4 +1,4 @@
-package threadbox;
+package sbox.threadbox;
 
 import java.util.HashSet;
 import java.util.Set;
