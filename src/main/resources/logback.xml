@@ -9,13 +9,13 @@
         </timeBasedFileNamingAndTriggeringPolicy>
     </rollingPolicy>
     <encoder>
-      <pattern>%d [%thread] %-5p %c - %m%n</pattern>
+      <pattern>%d{ISO8601,US/Eastern} [%thread] [%-5p] [%c{2}]\t- %m%n</pattern>
     </encoder>
   </appender>-->
 
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
-      <pattern>%d [%thread] %-5p %c - %m%n</pattern>
+      <pattern>%d{ISO8601,US/Eastern} [%thread] [%-5p] [%c{2}]\t- %m%n</pattern>
     </encoder>
   </appender>
 
